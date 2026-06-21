@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <div class="app-wrapper">
+      <!-- Header -->
+      <header>
+        <div class="header-title">
+          <h1>Good Coffee</h1>
+          <p>Happy Day</p>
+        </div>
+      </header>
+
+      <div class="section-header">
+        <h2>Trendy Product</h2>
+      </div>
+
+      <div class="product-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <img src="img/peppermint-coffee.png" alt="Coffee" />
+          <h3>Peppermint</h3>
+          <p>Iced Coffee</p>
+          <div class="bottom-row">
+            <span class="price">$25</span>
+            <button class="add-btn-main" onclick="addToCart('Peppermint', 25)">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <img src="img/caramel.png" alt="Latte" />
+          <h3>Caramel Macchiato</h3>
+          <p>Iced Coffee</p>
+          <div class="bottom-row">
+            <span class="price">$28</span>
+            <button
+              class="add-btn-main"
+              onclick="addToCart('Caramel Macchiato', 28)"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <img src="img/coffee-latte.png" alt="Latte" />
+          <h3>Coffee Latte</h3>
+          <p>Hot Coffee</p>
+          <div class="bottom-row">
+            <span class="price">$22</span>
+            <button
+              class="add-btn-main"
+              onclick="addToCart('Coffee Latte', 22)"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+          <img src="img/mocha.png" alt="Mocha" />
+          <h3>Mocha</h3>
+          <p>Chocolate Coffee</p>
+          <div class="bottom-row">
+            <span class="price">$30</span>
+            <button class="add-btn-main" onclick="addToCart('Mocha', 30)">
+              Add to cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card">
+          <img src="img/tea.png" alt="Tea" />
+          <h3>Herbal Tea</h3>
+          <p>Hot Tea</p>
+          <div class="bottom-row">
+            <span class="price">$30</span>
+            <button class="add-btn-main" onclick="addToCart('Herbal Tea', 30)">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CART SECTION -->
+      <div id="cart-section">
+        <h3>Your Order</h3>
+        <div id="cart-items-container">
+          <p
+            style="color: var(--text-grey); text-align: center; font-size: 14px"
+          >
+            Add items to start your order.
+          </p>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <span id="total-price">$0.00</span>
+        </div>
+        <button class="checkout-btn">Check Out</button>
+      </div>
+    </div>
+
+    <script src="cart.js"></script>
+  </body>
+</html>
