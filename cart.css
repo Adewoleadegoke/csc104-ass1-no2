@@ -96,18 +96,6 @@ header {
   font-family: "Poppins", sans-serif;
 }
 
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-.section-header h2 {
-  font-size: 18px;
-  color: var(--primary-brown);
-}
-
 .product-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
